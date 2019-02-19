@@ -1,6 +1,6 @@
 <template  lang="pug" >
 	.container-landing
-		header.header(  v-on:scroll="handleScroll" v-bind:class="{ 'scrolled': scrolled }" )
+		header.header(  v-on:scroll="handleScrollT" v-bind:class="{ 'scrolled': scrolled }" )
 			.header-container
 				a(href="#").header-logo
 					img(src="http://tinyimg.io/i/787YlsY.png")
@@ -94,15 +94,19 @@ export default {
 	},
 	methods:{
 		handleScroll (val) {
+
 			if( window.scrollY > 120 ){
 				this.scrolled = true
 			}else {
 				this.scrolled = false
 			}
 
+		},
+		handleScrollT(val){
+			console.log(val)
 		}
 	},
-	created () {
+	mounted () {
 		window.addEventListener('scroll', this.handleScroll);
 	}
 }
