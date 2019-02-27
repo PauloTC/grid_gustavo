@@ -20,7 +20,7 @@
 						li 
 							a( v-scroll-to="'#contact'") Contacto
 		.b1( id="home" )
-			.b1-image( style="background-image:url('http://tinyimg.io/i/1THi3tC.png')"  )
+			.b1-image( style="background-image:url('https://i.ibb.co/LRwYgyS/gustavo-villegas-musico-principal.png')"  )
 				figcaption
 					| TALLERES  <br/> DE VERANO
 					span INICIO 07 DE ENERO
